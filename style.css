@@ -1,10 +1,380 @@
-*{
+@font-face {
+    font-family: Nimbus;
+    src: url(./Source/nimbus-sans-l_regular.ttf);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Nimbus;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
+
+.main {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 10vw;
+    /* background-color: red; */
+    position: relative;
+}
+
+nav #name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+nav .left {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.hero {
+    width: 100%;
+    margin-top: 15vw;
+    padding: 0vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sustain {
+    width: 10vw;
+}
+
+.sustain p {
+    font-size: 13.5px;
+    margin: 8px 0;
+    font-weight: 800;
+    opacity: .8;
+    text-transform: capitalize;
+}
+
+.sustain .sustain-Imgwrapper {
+    width: 100%;
+    height: 15vw;
+    /* background-color: black; */
+    position: relative;
+    overflow: hidden;
+}
+
+.sustain-Imgwrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.epheremal {
+    position: relative;
+    width: 30vw;
+    min-height: 42vw;
+}
+
+.imgAndtext {
+    /* background-color: red; */
+}
+
+.epheremal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.epheremal p {
+    font-size: 1.3vw;
+    width: 40%;
+    letter-spacing: -.07vw;
+    line-height: 1.3;
+    margin-top: 30px;
+}
+
+.epheremal .heading {
+    position: absolute;
+    top: -20%;
+    left: -22%;
+
+}
+
+.epheremal h1 {
+    font-size: 6vw;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.4vw;
+}
+
+.visit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.circlev {
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #5e5e5e;
+}
+
+.circlev i {
+    color: #5e5e5e;
+}
+
+.visit h3 {
+    font-weight: 400;
+    color: #5e5e5e;
+}
+
+.motive {
+    padding: 3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 3VW;
+
+}
+
+.motive p {
+    line-height: 1.7;
+    letter-spacing: -.05vw;
+    position: relative;
+    right: 0;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 1.7vw;
+    ;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+.motive span {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+#onespan {
+    width: 80px;
+    height: 50px;
+    background-image: url(./Source/bluegirl.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+#twospan {
+    width: 130px;
+    height: 60px;
+    background-image: url(./Source/shaljam.jpg);
+    background-size: cover;
+    background-position: 0% 48%;
+}
+
+#threespan {
+    width: 80px;
+    height: 50px;
+    background-image: url(./Source/grass.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+}
+
+.pictures{
+    padding: 3vw;
+    padding-left:14vw;
+    padding-right: 12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstpic{
+    width:17vw;
+}
+
+.firstpic .picimg{
+    width: 100%;
+    height: 24vw;
+    margin-bottom: 1vw;
+}
+
+.firstpic h1{
+    letter-spacing: -.1vw;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.firstpic p{
+    opacity: .8;
+    font-size: 1vw;
+    letter-spacing:-.07vw;
+    line-height:1;
+}
+
+.firstpic{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.firstpic img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.firstpic{
+    width:25vw;
+}
+
+
+.secpic .picimg{
+    width: 100%;
+    height: 37vw;
+    margin-bottom: 1vw;
+}
+
+.secpic h1{
+    letter-spacing: -.1vw;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+.secpic p{
+    font-size: 1vw;
+    letter-spacing:-.07vw;
+    line-height:1;
+    width: 50%;
+    text-align: right;
+}
+
+.secpic{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 25vw;
+}
+
+.secpic{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.secpic img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+}
+
+.banner-img{
+    width: 60%;
+    height: 70vh;
+    /* background-color: red; */
+}
+
+.banner-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 70%;
+}
+
+.btext{
+    width:40%;
+    padding: 0 4vw;
+}
+
+.btext h1{
+    font-size: 2.6vw;
+    font-weight: 400;
+    letter-spacing: -.1vw;
+    line-height: 1;
+}
+
+
+.btext p{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.future{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.future video{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
+    width: 100%;
+}
+
+.ftext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+    background-color: #fff;
+    padding: 1vw 2vw;
+    border-radius: 10px;
+
+}
+
+.ftext button{
+    padding: .8vw 1.7vw;
+    font-size: .8vw;
+    text-transform:capitalize;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 100px;
+    background-color: #fff;
+    border: 1px solid #c6c6c6;
+    color: #5e5e5e;
+}
+
